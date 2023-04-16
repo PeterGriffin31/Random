@@ -1,0 +1,7 @@
+variable1 = input("Please enter a word with numbers : ")
+
+if any(char.isdigit() for char in variable1):
+    variableinversé = variable1[::-1].upper()
+    print("The word backwords and in CAPS is :", variableinversé)
+else:
+    print(variable1 + " does not contain any numbers.")
